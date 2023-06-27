@@ -1,0 +1,7 @@
+public Integer fibonacci(Integer n) {
+    Integer fib = 0;
+    for (Integer i  = 0; i < n; i++) {
+        fib += i;
+    }
+    return fib;
+}
