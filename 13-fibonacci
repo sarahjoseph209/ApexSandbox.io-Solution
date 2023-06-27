@@ -1,6 +1,9 @@
 public Integer fibonacci(Integer n) {
-    if (n == 1 || n== 2))
-        return 1;
+    if (n == 1 || n == 2) {
+
+            return 1;
+
+        }
     Integer currentValue = 1;
     Integer lastValue = 1;
     Integer temp = 0;
