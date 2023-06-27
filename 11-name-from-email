@@ -5,5 +5,5 @@ public String nameFromEmail(String email) {
     //firstName = firstName.capitalize();
     lastName = lastName.toLowerCase();
     //lastName = lastName.capitalize();
-    return firstName.capitalize() + lastName.capitalize();
+    return firstName.capitalize() + ' ' + lastName.capitalize();
 }
