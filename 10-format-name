@@ -1,9 +1,9 @@
 public String formatName(String firstName, String lastName) {
-    if (firstName && lastName == (null || ''))
+    if (String.IsBlank(firstName) && String.IsBlank(lastName))
         return '';
-    else if (firstName == (null || ''))
+    else if (String.IsBlank(firstName))
         return lastName;
-    else if (lastName == (null || ''))
+    else if (String.IsBlank(lastName))
         return firstName;
     else
         return lastName + ', ' + firstName;
