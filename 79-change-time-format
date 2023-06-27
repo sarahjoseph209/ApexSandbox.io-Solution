@@ -10,6 +10,6 @@ public String changeTimeFormat(String strTime) {
         return strTime + ' PM';
     else
         hourInt = hourInt - 12;
-        return hourInt(String) + ':' + minStr + ' PM';
+        return String.valueOf(hourInt) + ':' + minStr + ' PM';
 
 }
