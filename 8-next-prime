@@ -1,10 +1,11 @@
 public Integer nextPrime(Integer num) {
-    Integer nextNum = num + 1;
+    Integer nextNum = num;
     boolean isNextPrime = false;
     while (isNextPrime == false) {
-        isNextPrime = isPrime(nextNum);
         nextNum++;
+        isNextPrime = isPrime(nextNum);
     }
+    return nextNum;
 }
 
 public Boolean isPrime(Integer num) {
