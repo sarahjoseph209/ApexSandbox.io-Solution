@@ -1,0 +1,16 @@
+public Integer nextPrime(Integer num) {
+    Integer nextNum = num + 1;
+    boolean isNextPrime = false;
+    while (isNextPrime == false) {
+        isNextPrime = isPrime(nextNum);
+        nextNum++;
+    }
+}
+
+public Boolean isPrime(Integer num) {
+    for (Integer i = 2; i < num; i++) {
+        if (Math.mod(num, i) == 0)
+            return false;
+    }
+    return true;
+}
