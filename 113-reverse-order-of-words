@@ -13,7 +13,7 @@ public String reverseWordsInASentence(String sentence){
         reverse += sentenceSplit[i];
         }
         else{
-         reverse += ' '+ lsentenceSplit[i];
+         reverse += ' '+ sentenceSplit[i];
         }
     }
     return reverse;
