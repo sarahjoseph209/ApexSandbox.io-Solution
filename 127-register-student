@@ -9,6 +9,6 @@ public String registerStudent(String name, String phone, String email) {
 
         insert apxStudent;
 
-        SELECT apxio__Registration_Number__c
-        FROM apxStudent
+        String registrationNumber = [SELECT apxio__Registration_Number__c
+        FROM apxStudent];
 }
