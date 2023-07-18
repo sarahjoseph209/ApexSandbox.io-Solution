@@ -1,16 +1,12 @@
 public String registerStudent(String name, String phone, String email) {
-    apxio__Student__c apxStudent = new apxio__Student__c();
+    apxio__Student__c student = new apxio__Student__c(Name = name, apxio__Phone__c = phone, 
+    apxio__Email__c = email);
 
-        apxStudent.Name = name;
+    insert student;
 
-        apxStudent.apxio__Phone__c = phone;
+    apxio__Student__c insertedStudent = [SELECT Id, apxio__Registration_Number__c 
+                                         FROM apxio__Student__c
+                                         WHERE Id = :student.Id];
 
-        apxStudent.apxio__Email__c = email;
-
-        insert apxStudent;
-
-        String registrationNumber = [SELECT apxio__Registration_Number__c
-        FROM apxStudent];
-
-        return registrationNumber;
+    return insertedStudent.apxio__Registration_Number__c;
 }
