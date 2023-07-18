@@ -9,5 +9,6 @@ public String registerStudent(String name, String phone, String email) {
 
         insert apxStudent;
 
-        return apxStudent.apxio__Registration_Number__c;
+        SELECT apxio__Registration_Number__c
+        FROM apxStudent
 }
