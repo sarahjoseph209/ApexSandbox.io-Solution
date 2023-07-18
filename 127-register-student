@@ -1,5 +1,5 @@
 public String registerStudent(String name, String phone, String email) {
-    apxio__Course__c apxStudent = new apxio__Student__c();
+    apxio__Student__c apxStudent = new apxio__Student__c();
 
         apxStudent.Name = name;
 
